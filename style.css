@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(75, 73, 73);
+}
+
+header {
+    background-color: darkblue;
+    border: 3px;
+    border-color: black;
+    border-style: dashed;
+    /* font-size: 40vi; */
+    /*position: relative;*/
+    float: left;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 50%;
+    height: 50vh;
+}
+
+#topRight {
+    /* background-color: rgb(207, 203, 203); */
+    background-color: white;
+    border: 3px;
+    border-color: black;
+    border-style: dashed;
+    /* position: relative; */
+    float: left;
+    z-index: 2;
+    right: 0px;
+    top: 0px;
+    width: 50%;
+    height: 50vh;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+#lineBreak {
+    position: relative;
+    top:200px;
+}
+
+#videoText {
+    position: relative;
+    top:210px;
+    background-color: rgb(44, 43, 43);
+}
+
+/* #topRight:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  } */
+
+#bottomLeft {
+    background-color: rgb(46, 16, 16);
+    border: 3px;
+    border-color: black;
+    border-style: dashed;
+    font-size: 60px;
+    /* font-size: 40vi; */
+    /* position: relative; */
+    float: left;
+    z-index: 3;
+    left: 0px;
+    bottom: 0px;
+    width: 40%;
+    height: 50vh;
+    clear: left;
+}
+
+#date {
+    font-size: 35px;
+}
+
+aside {
+    background-color: rgb(44, 43, 43);
+    border: 3px;
+    border-color: black;
+    border-style: dashed;
+    /* position: relative; */
+    float: left;
+    z-index: 4;
+    right: 0px;
+    bottom: 0px;
+    width: 60%;
+    height: 50vh;
+}
+
+#heart {
+    background-color: rgb(233, 27, 27);
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px;
+    position: relative;
+    transform: rotate(-45deg);
+    left: 0px; 
+    top: 117px;
+    width: 50px;
+  }
+  
+  #heart:before,
+  #heart:after {
+    content: "";
+    background-color: rgb(233, 27, 27);
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+  }
+  
+  #heart:before {
+    top: -25px;
+    left: 0;
+  }
+  
+  #heart:after {
+    left: 25px;
+    top: 0;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale( 1 );    
+    }
+    20% {
+      transform: scale( 1.25 ) 
+        translateX(5%) 
+        translateY(5%);
+    } 
+    40% {
+      transform: scale( 1.5 ) 
+        translateX(9%) 
+        translateY(10%);
+    }
+  }
+
+  #heart {
+    animation: heartbeat 1s infinite; // our heart has infinite heartbeat :)
+    ...
+  }
